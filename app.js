@@ -19,8 +19,10 @@ for (let item of dataUpdate) {
 
 
 
+
 let addButton = document.getElementsByClassName('add-button')[0]
 addButton.style.fontSize = '1rem'
+
 
 
 
@@ -81,6 +83,8 @@ function extractor(text, todoListDiv) {
     newDiv.style.fontSize = '1rem'
 
 
+
+
     if (text === '') {
         alert('please enter todo details')
         return
@@ -90,6 +94,7 @@ function extractor(text, todoListDiv) {
     let checkBox = document.createElement('input')
     checkBox.type = 'checkbox'
     checkBox.style.marginRight = '1rem'
+    // checkBox.sty
 
     checkBox.addEventListener('change', () => {
         checkBoxCheck(checkBox, textDiv)
@@ -179,13 +184,13 @@ addButton.addEventListener('click', () => {
 
 
 function updateLocalStorage() {
-    l = []
+    let dataArray = []
     let childData = todoListDiv.children
     for (let item of childData) {
-        l.push([item.firstChild.firstChild.checked, item.firstChild.lastChild.textContent])
+        dataArray.push([item.firstChild.firstChild.checked, item.firstChild.lastChild.textContent])
     }
 
-    localStorage.setItem('user', JSON.stringify(l));
+    localStorage.setItem('user', JSON.stringify(dataArray));
 
 }
 
