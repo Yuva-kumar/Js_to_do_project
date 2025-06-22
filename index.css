@@ -27,3 +27,7 @@ button {
     margin-left: 5%;
     background-color: orange
 }
+
+#todo-input{
+    height:2rem;
+}
