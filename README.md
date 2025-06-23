@@ -1,8 +1,8 @@
-# 📝 To-Do List Project
+#  To-Do List Project
 
 A simple To-Do list web application built using **HTML**, **CSS**, and **JavaScript**, with support for **localStorage** to persist data.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 project/
@@ -11,21 +11,22 @@ project/
 └── app.js
 ```
 
-## 🚀 Features
+##  Features
 
 - Add new to-do items
 - Mark tasks as completed
 - Delete tasks
 - Move tasks up or down
+- **Clear all tasks with a single button**
 - Persist tasks using localStorage
 
-## 🌐 Live Demo
+##  Live Demo
 
 You can deploy this project using Netlify or GitHub Pages.
 
 ---
 
-## 📄 Files
+##  Files
 
 ### `index.html`
 
@@ -41,14 +42,14 @@ JavaScript logic including event listeners, localStorage management, and UI upda
 
 ---
 
-## 📦 How to Run
+##  How to Run
 
 1. Clone the repository or download the code files.
 2. Open `index.html` in a web browser.
 
 ---
 
-## 📤 How to Deploy to Netlify
+##  How to Deploy to Netlify
 
 1. Push this project to a GitHub repository.
 2. Go to [Netlify](https://netlify.com), log in, and select "Add new site" > "Import from GitHub".
