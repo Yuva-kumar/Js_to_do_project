@@ -22,7 +22,7 @@ input {
     flex: 4;
 }
 
-button {
+.add-button {
     flex: 1;
     margin-left: 5%;
     background-color: orange
@@ -31,3 +31,20 @@ button {
 #todo-input{
     height:2rem;
 }
+
+.clear-div{
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.task{
+    background-color: black;    
+    color: white;
+    padding: 0.2rem;
+}
+.clear-button{
+    background: rgb(248, 90, 90);
+    padding: 0.2rem;
+    width:100px;
+    
+} 

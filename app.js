@@ -192,3 +192,17 @@ function updateLocalStorage() {
     localStorage.setItem('user', JSON.stringify(dataArray));
 
 }
+
+
+const clearButton = document.querySelector('.clear-button')
+clearButton.addEventListener('click',function ( ){
+    
+    const conform = confirm('are you sure to clear all your todos...')
+    if(conform){
+        todoListDiv.innerHTML = ''
+        // updateLocalStorage()
+        localStorage.removeItem('user')
+    }
+    
+})
+
