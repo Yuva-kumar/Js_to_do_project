@@ -5,7 +5,8 @@ let todoListDiv = document.createElement('div')
 todoListDiv.className = 'todoList-class'
 content.append(todoListDiv)
 todoListDiv.style.marginTop = '5%';
-
+let inputField = document.getElementById('todo-input')
+inputField.style.background = 'white'
 
 // getting the data  from localstorage
 const newData = localStorage.getItem('user')
@@ -168,9 +169,9 @@ function extractor(text, todoListDiv) {
 
 // update  text to local storage
 addButton.addEventListener('click', () => {
-    let inputField = document.getElementById('todo-input')
     inputField.style.fontSize = '1rem'
     inputField.style.padding = '1%';
+    // inputField.style.background = 'white'
 
     const text = inputField.value;
     inputField.value = '';
