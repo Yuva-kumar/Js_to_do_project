@@ -10,16 +10,17 @@ todoListDiv.style.marginTop = '5%';
 // getting the data  from localstorage
 const newData = localStorage.getItem('user')
 if(newData){
-    var dataUpdate = JSON.parse(newData)
-}
-
-for (let item of dataUpdate) {
+    const dataUpdate = JSON.parse(newData)
+    for (let item of dataUpdate) {
     let checkBox = extractor(item[1], todoListDiv)
     checkBox.checked = item[0]
     if (item[0]) {
         checkBox.dispatchEvent(new Event('change'))
     }
 }
+}
+
+
 
 
 // button stylings
