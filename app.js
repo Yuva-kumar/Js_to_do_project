@@ -9,7 +9,9 @@ todoListDiv.style.marginTop = '5%';
 
 // getting the data  from localstorage
 const newData = localStorage.getItem('user')
-const dataUpdate = JSON.parse(newData)
+if(newData){
+    var dataUpdate = JSON.parse(newData)
+}
 
 for (let item of dataUpdate) {
     let checkBox = extractor(item[1], todoListDiv)
